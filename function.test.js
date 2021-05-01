@@ -49,7 +49,7 @@ test("Should be falsy", () => {
   expect(functions.checkValue(undefined)).toBeFalsy();
 });
 
-// toEqual
+// toEqual: use to equal for object and array
 test("User should be Bidemi Animashaun Object", () => {
   expect(functions.createUser()).toEqual({
     firstName: "Bidemi",
@@ -81,7 +81,7 @@ test("Admin should be in usernames", () => {
   expect(usernames).toContain("admin");
 });
 
-// Working with async data
+// Working with async data expect.assertions is used for async data
 // Promise
 // test("User fetched name should be Leanne Graham", () => {
 //   expect.assertions(1);
